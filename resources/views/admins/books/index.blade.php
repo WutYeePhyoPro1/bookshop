@@ -19,35 +19,7 @@
         </div>
         <div class="mt-8 flex flex-col px-4 sm:px-6 lg:px-8">
             <div class="-my-2 -mx-4 sm:-mx-6 lg:-mx-8">
-            <div class="inline-block min-w-full py-2 align-middle">
-                <form action="{{ route('book_search') }}" method="GET">
-                    @csrf
-                    <div class="mt-3 grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4 xl:grid-cols-6">
-                       
-                       
-                        <div class="col-span-1">
-                            <label for="name" class="block text-sm font-semibold leading-6 text-gray-900">Employee No</label>
-                            <div class="my-2">
-                                <input name="name" type="search" class="mt-2 h-9 block w-full rounded-md border-0 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-cyan-600 sm:text-sm sm:leading-6"  value="{{ Session::get('name') }}" />
-
-                            </div>
-                        </div>
-                        <div class="col-span-1">
-                            <label for="search" class="block text-sm font-semibold leading-6 text-white">Employee No</label>
-                            <div class="my-2">
-
-                                <button type="submit" id="addNewBtn"
-                                    class="inline-flex items-center justify-center rounded border border-transparent bg-cyan-600 px-4 py-2 text-sm font-bold text-white shadow-md hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 sm:w-auto mr-2">
-                                    Search
-                                </button>
-                                <button type="reset" id="resetBtn"
-                                    class="inline-flex items-center justify-center rounded border border-transparent bg-rose-600 px-4 py-2 text-sm font-bold text-white shadow-md hover:bg-rose-700 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:ring-offset-2 sm:w-auto mr-2">
-                                    Clear All
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
+            <div class="inline-block min-w-full py-2 align-middle">               
 
                 <table class="min-w-full d-table border-separate border-spacing-y-2" id="user_table">
                     <thead class="bg-cyan-600">
